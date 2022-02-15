@@ -1,2 +1,7 @@
-# one-blue-syntax
- ATOM Editor theme with blue elements best used with One Dark UI
+# One-Blue-syntax
+
+Use it with One Dark for best experience
+Has elements of blue all in gray it.
+styles.less coming up soon to go with this
+
+TODO: ui

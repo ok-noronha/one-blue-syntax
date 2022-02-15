@@ -1,0 +1,132 @@
+/* Your Stylesheet
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved. *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ * Examples
+ * (To see them, uncomment and save)
+ */
+// style the background color of the tree view
+.tree-view {
+  background-color: #02101D;
+
+  .list-item {
+    font-weight: 50;
+    letter-spacing: 0.058em;
+    text-rendering: optimizeLegibility;
+    font-size: 1.06em;
+    //font-family: "Sudo"
+  }
+}
+// style the background and foreground colors on the atom-text-editor-element itself
+
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+  letter-spacing: 0.004em;
+  font-family: "Consolas";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  .syntax--comment {
+    font-style: italic;
+    letter-spacing: 0.006em;
+  }
+}
+// style UI elements inside atom-text-editor
+
+atom-text-editor .cursor {
+  // border-color: red;
+}
+
+.file.entry.list-item.selected span {
+  font-weight: ligt-bold;
+  //margin: 4px 0;
+  &:after {
+    content: ' \'';
+  }
+}
+
+.tab-bar .tab.active {
+  min-width: 120px;
+}
+
+.tab.sortable.active {
+  letter-spacing: 0.058em;
+  text-rendering: optimizeLegibility;
+  font-size: 1em;
+  color: rgba(127, 136, 214, 1);
+}
+
+atom-text-editor .line.cursor-line {
+  background-color: #0A0E30;
+  // font-size: 18px;
+  // padding: 5px 0;
+  .leading-whitespace {
+    // font-size: 0.75em;
+  }
+  // padding-left: -6px;
+}
+atom-text-editor .highlights {
+  // Box
+  .highlight-selected .region {
+    border-color: #98D8F7;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+  }
+  // Background (set in settings)
+  .highlight-selected.background .region {
+    background-color: #25365C;
+  }
+  // Light theme box (set in settings)
+  .highlight-selected.light-theme .region {
+    border-color: rgba(255, 128, 64, 0.4);
+  }
+  // Light theme background (set in settings)
+  .highlight-selected.light-theme.background .region {
+    background-color: rgba(255, 128, 64, 0.2);
+  }
+  }
+
+// If you have the Scroll Marker package installed https://atom.io/packages/scroll-marker
+// These are the colours that will be shown in the scroller
+.highlight-selected-marker-layer.scroll-marker-layer {
+  .scroll-marker {
+    background-color: #ffff00
+  }
+}
+
+.highlight-selected-selected-marker-layer.scroll-marker-layer {
+  .scroll-marker {
+    background-color: #f71010
+  }
+}
+.atom-clock {
+  font-family: "Consolas";
+  &:after {
+    content: " IST";
+  }
+}
+.platformio-ide-terminal .xterm {
+  background-color: ;
+  color: #318A2B;
+
+  ::selection {
+    background-color:#318A2B;
+    color: #010E04;
+  }
+
+  .terminal-cursor {
+    background-color: #103911;
+  }
+}
+minimap-codeglance {
+  // see through the codeglance element
+  color: #064A8A;
+  opacity: .88;
+  // change the shadow of the element
+  box-shadow: 0 0 10px rgba(223, 223, 223, 0.43);
+  // etc.
+}
