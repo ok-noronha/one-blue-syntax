@@ -1,5 +1,5 @@
 {
-  "name": "one-blue-syntax",
+  "name": "one-dblue-syntax",
   "theme": "syntax",
   "version": "1.0.1",
   "description": "Basic theme with a bit of blue to be used along with One Dark UI on Atom Editor",
@@ -7,7 +7,7 @@
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/ok-noronha/one-blue-syntax",
+  "repository": "https://github.com/ok-noronha/one-dblue-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
